@@ -1,0 +1,23 @@
+{
+  "name": "sebpay-node",
+  "version": "0.2.0",
+  "description": "Official Node.js SDK for Sebpay hosted checkout — create a checkout session, redirect your customer, confirm the payment and verify webhooks. Server-side only.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
